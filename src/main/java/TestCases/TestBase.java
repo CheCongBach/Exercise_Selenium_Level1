@@ -31,7 +31,7 @@ public class TestBase {
 
     @DataProvider
     public Iterator<Object[]> data () throws IOException {
-        String path = "D:\\Selenium_Level1_Exercise\\src\\main\\java\\DataObjects\\" + this.getClass().getSimpleName() + ".csv";
+        String path = "src\\main\\java\\DataObjects\\" + this.getClass().getSimpleName() + ".csv";
         Reader reader = new FileReader(path);
         CSVReader csvreader = new CSVReader(reader);
         List<Object[]> list = new ArrayList<>();
